@@ -20,4 +20,13 @@ public class OtherController {
         return "/";
     }
 
+    @GetMapping("other-controller-array")
+    public String otherArrayExceptionTest() throws MemberRegistException {
+        double[] array = new double[0];
+        System.out.println(array[0]);
+        return "/";
+    }
+
+
+
 }

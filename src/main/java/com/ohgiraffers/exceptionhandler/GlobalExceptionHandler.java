@@ -20,5 +20,10 @@ public class GlobalExceptionHandler {
         return "error/memberRegist";
     }
 
+    @ExceptionHandler(Exception.class)
+    public String nullPointerExceptionHandler(Exception exception) {
+        return "error/default";
+    }
+
 
 }
